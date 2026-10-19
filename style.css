@@ -16,3 +16,67 @@ body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;ba
 
 
 .extras-toolbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:8px}.extra-button{padding:11px 5px;border:1px solid #d5c37d32;border-radius:12px;background:#16241b;color:#d9e2d4;font:700 11px "DM Sans",sans-serif;box-shadow:0 5px 14px #0002}.extra-button:active{transform:scale(.98);border-color:#e4bd67}.progress-panel{margin-top:12px;padding:12px 14px;border:1px solid #d5c37d25;border-radius:14px;background:linear-gradient(120deg,#18271c,#101711)}.progress-head,.progress-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}.progress-head{font-size:8px;letter-spacing:1.2px;color:#a7b8a7;font-weight:800}.progress-head strong{color:var(--gold2)}.progress-track{height:6px;margin:9px 0 7px;border-radius:99px;background:#050b07;overflow:hidden}.progress-track span{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#b88b39,#ffe5a0);box-shadow:0 0 12px #e4bd6766;transition:width .35s}.progress-foot{font-size:10px;color:#87998a}.settings-backdrop{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:18px;background:#030805df;backdrop-filter:blur(10px)}.settings-backdrop[hidden]{display:none}.settings-card{position:relative;width:min(100%,390px);max-height:90vh;overflow:auto;padding:26px 20px 20px;border:1px solid #e0c16f8c;border-radius:22px;background:radial-gradient(ellipse at top,#263e2b,#101710 75%);box-shadow:0 24px 80px #000b}.settings-card h2{font:700 25px "Playfair Display",serif;margin:8px 0 20px}.settings-close{position:absolute;right:13px;top:12px;width:34px;height:34px;border:1px solid #d5c37d44;border-radius:10px;background:#ffffff08;color:#fff;font-size:24px}.setting-row{display:flex;flex-direction:column;gap:8px;margin:14px 0;color:#c4d0c2;font-size:12px;font-weight:700}.setting-row select{width:100%;padding:12px;border-radius:10px;border:1px solid #d5c37d44;background:#111c14;color:#fff;font:inherit}.setting-toggle{display:flex;align-items:center;gap:10px;padding:10px 0;color:#c4d0c2;font-size:12px}.setting-toggle input{accent-color:#e4bd67;width:17px;height:17px}.settings-actions{display:grid;gap:9px;margin-top:18px}.settings-actions .extra-button{width:100%}body.theme-obsidian{--felt:#242b2b}body.theme-obsidian .game-panel{background:radial-gradient(ellipse at 50% 12%,#454c4b,#222a29 65%,#171c1b)}body.theme-sapphire .game-panel{background:radial-gradient(ellipse at 50% 12%,#28618c,#16446c 60%,#102c4b)}body.theme-royal .game-panel{background:radial-gradient(ellipse at 50% 12%,#79602b,#51401c 60%,#342810)}body.reduce-motion *,body.reduce-motion *:before,body.reduce-motion *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}@media(max-width:370px){.extra-button{font-size:10px;padding:10px 2px}.progress-panel{padding:10px}}
+
+
+/* FUTX VISUAL REFRESH v2026-10-19: contraste y jerarquía más notorios */
+:root{--bg:#070b18;--panel:#10172a;--gold:#75f2d0;--gold2:#c2fff0;--muted:#a3b4d1;--red:#ff5478;--felt:#075b55;--card-shadow:0 8px 18px #02061580,0 1px 0 #fff;--card-w:clamp(38px,9.7vw,74px)}
+html{background:#070b18}
+body{background:radial-gradient(ellipse at 50% -12%,#293c72 0,#111a35 29rem,#070b18 65rem);color:#f4f7ff}
+body:before{opacity:.1;background-image:radial-gradient(#9ab5ff .7px,transparent .7px);background-size:22px 22px}
+.app-shell{width:min(100%,960px);padding-left:clamp(12px,3vw,26px);padding-right:clamp(12px,3vw,26px)}
+.topbar{padding:10px 4px 22px;gap:15px}
+.brand-mark{width:56px;height:56px;flex-basis:56px;border-radius:18px;border:1px solid #75f2d080;background:linear-gradient(145deg,#1b3760,#10152a);color:#8effe2;box-shadow:0 0 32px #43e6d51e,inset 0 1px #fff3;font-size:31px}
+.eyebrow{color:#75f2d0;letter-spacing:2.4px}
+.brand-copy h1{font-size:clamp(27px,6vw,36px);letter-spacing:-.8px}
+.brand-copy h1 em{color:#75f2d0}
+.brand-subtitle{font-size:12px;color:#aab9dc}
+.icon-button{border-color:#75f2d055;background:linear-gradient(145deg,#1a294a,#101629);color:#a3ffea;border-radius:16px}
+.table-intro{margin:4px 3px 14px}
+.table-kicker{color:#8ca8d7;letter-spacing:2.5px}
+.table-intro h2{font-size:clamp(22px,5.4vw,31px)}
+.table-intro h2 span{color:#75f2d0}
+.deck-badge{border-color:#75f2d04d;background:#75f2d011;color:#c4fff2;padding:9px 12px}
+.live-dot,.footer-dot{background:#75f2d0;box-shadow:0 0 12px #75f2d0aa}
+.stats{gap:10px;margin-bottom:16px}
+.stat{border:1px solid #91b5ff20;border-radius:17px;padding:13px 14px;background:linear-gradient(145deg,#182543dd,#10172aee);box-shadow:inset 0 1px #fff0a}
+.stat-label{color:#9fb2d7;font-size:8px;letter-spacing:1.25px}
+.stat-icon{color:#75f2d0}
+.stat strong{font-size:clamp(21px,5vw,26px);color:#f4f7ff}
+.game-panel{padding:clamp(14px,3vw,25px) clamp(8px,2vw,18px) 22px;border:1px solid #75f2d0a6;border-radius:25px;background:radial-gradient(ellipse at 50% 5%,#168477 0,#09675f 30%,#064b4c 70%,#07343e 100%);box-shadow:0 25px 65px #0008,0 0 0 5px #75f2d00d,0 0 40px #3ae4c00d,inset 0 0 0 1px #d5fff40d,inset 0 0 70px #001a22a8;min-height:calc(var(--card-h)*3.15)}
+.game-panel:before{inset:8px;border-color:#c2fff04a;border-radius:17px}
+.game-panel:after{color:#c5fff009;font-size:260px;right:-12px;bottom:-90px}
+.stock,.foundation-slot,.tableau-slot{border-color:#9cf8e17d;background:#043e3c70}
+.stock{box-shadow:inset 0 0 0 3px #075d55,inset 0 0 0 4px #b4fff0;background:repeating-linear-gradient(45deg,#0c5552,#0c5552 4px,#10716a 4px,#10716a 8px);color:#d0fff5}
+.stock.empty{background:#064443;border-color:#9cf8e17d}
+.foundation-slot{color:#baf9e3b8}
+.card{border-radius:8px;box-shadow:0 8px 18px #00152277,0 1px 0 #fff;transition:transform .15s,filter .15s,box-shadow .15s}
+.card.back{background:repeating-linear-gradient(135deg,#172c59,#172c59 4px,#284887 4px,#284887 8px);border:1px solid #91b8ff;box-shadow:inset 0 0 0 3px #1b3567,inset 0 0 0 4px #9ac1ff,0 7px 15px #00102099}
+.card.back:after{color:#c8fff2;text-shadow:0 0 13px #75f2d0aa}
+.card.selected{outline-color:#c2fff0;box-shadow:0 0 0 4px #75f2d033,0 12px 26px #001522bb}
+.card.hinted{outline-color:#fff0a4;box-shadow:0 0 22px #fff0a4bb}
+.toolbar{gap:10px;margin-top:16px}
+.tool-button{min-height:49px;border:1px solid #8baeff2d;border-radius:15px;background:linear-gradient(145deg,#1b2949,#10172a);color:#f4f7ff;font-size:12px;box-shadow:0 7px 18px #0003}
+.tool-button span{color:#75f2d0}
+.tool-button:active{border-color:#75f2d0;transform:translateY(1px) scale(.98)}
+.extras-toolbar{gap:9px;margin-top:10px}
+.extra-button{min-height:44px;border:1px solid #75f2d039;border-radius:14px;background:linear-gradient(145deg,#142c39,#10182a);color:#c9fff3;font-size:11px;box-shadow:0 6px 16px #0002}
+.extra-button:active{border-color:#75f2d0;background:#17433f}
+.progress-panel{margin-top:14px;padding:15px 16px;border:1px solid #8baeff2b;border-radius:17px;background:linear-gradient(120deg,#172442,#10172a)}
+.progress-head{color:#a9bee8}.progress-head strong{color:#75f2d0}
+.progress-track{height:7px;background:#070d1d}.progress-track span{background:linear-gradient(90deg,#2cbca8,#a4ffe9);box-shadow:0 0 14px #75f2d066}
+.progress-foot{color:#9aafd5}
+.footer{color:#7f93bd;letter-spacing:1.2px;margin-top:21px}
+#best-label{color:#75f2d0}
+.toast{border-color:#75f2d0a0;background:linear-gradient(145deg,#163d42,#111a30);color:#d3fff5}
+.gold-button{border-color:#b7fff0;background:linear-gradient(110deg,#1d9f8d,#9affdf 52%,#3dd7bd);color:#061d24;box-shadow:0 7px 22px #37d8bd25}
+.win-modal,.settings-card{border-color:#75f2d080;background:radial-gradient(ellipse at top,#203d58,#10172a 75%)}
+.win-icon{color:#75f2d0;text-shadow:0 0 22px #75f2d055}
+.settings-card h2{color:#f5f7ff}
+.setting-row,.setting-toggle{color:#c1cfe9}
+.setting-row select{border-color:#75f2d04d;background:#0e1930}
+.settings-close{border-color:#75f2d044}
+body.theme-obsidian .game-panel{background:radial-gradient(ellipse at 50% 12%,#525c6c,#2a3447 65%,#182132)}
+body.theme-sapphire .game-panel{background:radial-gradient(ellipse at 50% 12%,#337ac0,#164f87 60%,#102c55)}
+body.theme-royal .game-panel{background:radial-gradient(ellipse at 50% 12%,#a17a30,#65491d 60%,#392b15)}
+@media(min-width:650px){.app-shell{padding-top:30px}.topbar{padding-bottom:26px}.game-panel{min-height:450px}.stats{gap:12px}.stat{padding:16px 19px}}
+@media(max-width:370px){.topbar{gap:10px}.brand-mark{width:45px;height:45px;flex-basis:45px}.brand-copy h1{font-size:23px}.brand-subtitle{font-size:10px}.game-panel{border-radius:18px}.stats{gap:5px}.stat{padding:9px 8px}}
