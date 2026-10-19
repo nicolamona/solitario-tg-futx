@@ -14,6 +14,10 @@ Solitario Klondike en español, con una mesa premium esmeralda y dorada, diseña
 - Preferencia para reducir animaciones y efectos de sonido opcionales.
 - XP y niveles locales; las victorias otorgan XP.
 - Compartir el resumen de una partida mediante las opciones del dispositivo.
+- Animaciones de selección, cartas y celebración de victoria con partículas (respetan movimiento reducido).
+- Rehacer además de deshacer, y doble toque sobre una carta para intentar subirla a una base.
+- Panel de estadísticas locales, misiones orientativas, logros y colección cosmética por victorias.
+- Reversos de cartas: clásico, océano, aurora y real.
 - Diseño adaptable y soporte básico de Telegram Web Apps.
 
 ## Progreso y privacidad
