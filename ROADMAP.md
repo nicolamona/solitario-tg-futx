@@ -8,7 +8,7 @@ Construir un solitario Klondike premium para Telegram Mini Apps: atractivo, flui
 **Publicación prevista:** GitHub Pages  
 **Principios:** primero fiabilidad; después retención y competición; integración FUTX solo cuando exista una API segura y aprobada.
 
-## Etapa 0 — Proteger la versión actual
+## Estado de implementación (19/10/2026)\n\nSe ha integrado un primer bloque de funciones locales en la rama principal: guardado/recuperación, distribución reproducible, modo de robar 1 o 3, reto diario por fecha UTC, temas, reducción de animaciones, sonido opcional, XP/niveles locales y compartir resultados. La sintaxis JavaScript y las referencias de elementos HTML se comprobaron. Estas comprobaciones no sustituyen pruebas manuales completas en móvil/Telegram.\n\nLas clasificaciones globales, competición real entre amigos con resultados verificados y sincronización quedan pendientes de un backend seguro. La integración FUTX no se ha activado.\n\n## Etapa 0 — Proteger la versión actual
 
 - Mantener una versión estable recuperable antes de cada cambio importante.
 - Separar trabajo en ramas o cambios pequeños y verificables.
